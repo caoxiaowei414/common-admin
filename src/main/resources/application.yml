@@ -1,0 +1,53 @@
+logging:
+  level: info # 日志级别
+  config: classpath:config/logback.xml # logback 日志路径
+server:
+  port: 9000 # 设置端口号
+spring:
+  freemarker:
+    charset: utf-8 #设置项目字符集
+    request-context-attribute: request
+  jackson: #jackson配置
+    date-format: yyyy-MM-dd HH:mm:ss
+    joda-date-time-format: yyyy-MM-dd HH:mm:ss
+    locale: zh_CN
+    time-zone: GMT+8
+  datasource: #数据库相关配置
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://39.108.86.193:3306/flow_card?characterEncoding=utf-8
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    druid:      #https://github.com/alibaba/druid/tree/master/druid-spring-boot-starter
+      filter: stat,wall,log4j
+      initial-size: 10
+      min-idle: 10
+      max-active: 20
+      max-wait: 2000
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 300000
+      validation-query: SELECT 1 FROM DUAL
+      test-while-idle: true
+      test-on-borrow: false
+      test-on-return: false
+      pool-prepared-statements: true
+      max-pool-prepared-statement-per-connection-size: 20
+      aop-patterns: com.common.system.service.*
+      web-stat-filter:
+        url-pattern: /*
+        exclusions: '*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*'
+
+
+management:
+  port:  54001
+  security:
+    enabled: false
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+
+
+
+
+
