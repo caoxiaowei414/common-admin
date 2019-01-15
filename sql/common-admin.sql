@@ -3944,30 +3944,33 @@ primary key (`ticket_id`)
 drop table if exists `c_hour_statistics` ;
 create table `c_hour_statistics` (
 `hour_ticket_id`  int(11) unsigned zerofill not null auto_increment comment '主键 ' ,
+`client_id`  int(11) not null  comment '企业客户id  一个网关对应一个企业客户 , 网关和企业用户关系存储在redis中 , 新增和修改的时候一并修改redis' ,
+`connect_num` int(11) comment '时间内的连接数' ,
+`end_time` timestamp  comment '统计结束时间' ,
+`flow_size` int(10) comment '区间内流量消耗总大小',
 `create_on`  timestamp  comment '创建时间' ,
-`create_by`  varchar(20) null comment '创建人' ,
-`update_no`  timestamp  comment '更新时间' ,
-`update_by`  varchar(20) null comment '更新人' ,
 primary key (`hour_ticket_id`)
 )  engine=innodb default charset=utf8mb4 comment '实时话单统计表';
 
 drop table if exists `c_day_statistics` ;
 create table `c_day_statistics` (
 `day_ticket_id`  int(11) unsigned zerofill not null auto_increment comment '主键 ' ,
+`client_id`  int(11) not null  comment '企业客户id  一个网关对应一个企业客户 , 网关和企业用户关系存储在redis中 , 新增和修改的时候一并修改redis' ,
+`connect_num` int(11) comment '时间内的连接数' ,
+`end_time` timestamp  comment '统计结束时间' ,
+`flow_size` int(10) comment '区间内流量消耗总大小',
 `create_on`  timestamp  comment '创建时间' ,
-`create_by`  varchar(20) null comment '创建人' ,
-`update_no`  timestamp  comment '更新时间' ,
-`update_by`  varchar(20) null comment '更新人' ,
 primary key (`day_ticket_id`)
 )  engine=innodb default charset=utf8mb4 comment '日话单统计表';
 
 drop table if exists `c_month_statistics` ;
 create table `c_month_statistics` (
 `month_ticket_id`  int(11) unsigned zerofill not null auto_increment comment '主键 ' ,
+`client_id`  int(11) not null  comment '企业客户id  一个网关对应一个企业客户 , 网关和企业用户关系存储在redis中 , 新增和修改的时候一并修改redis' ,
+`connect_num` int(11) comment '时间内的连接数' ,
+`end_time` timestamp  comment '统计结束时间' ,
+`flow_size` int(10) comment '区间内流量消耗总大小',
 `create_on`  timestamp  comment '创建时间' ,
-`create_by`  varchar(20) null comment '创建人' ,
-`update_no`  timestamp  comment '更新时间' ,
-`update_by`  varchar(20) null comment '更新人' ,
 primary key (`month_ticket_id`)
 )  engine=innodb default charset=utf8mb4 comment '月话单统计表';
 

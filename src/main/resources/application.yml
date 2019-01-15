@@ -14,9 +14,7 @@ spring:
     time-zone: GMT+8
   datasource: #数据库相关配置
     type: com.alibaba.druid.pool.DruidDataSource
-    url: jdbc:mysql://39.108.86.193:3306/flow_card?characterEncoding=utf-8
-    username: root
-    password: 123456
+
     driver-class-name: com.mysql.jdbc.Driver
     druid:      #https://github.com/alibaba/druid/tree/master/druid-spring-boot-starter
       filter: stat,wall,log4j
