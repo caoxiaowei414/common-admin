@@ -3,7 +3,7 @@ package com.common.system.util;
 import java.io.Serializable;
 
 /**
- * Created by Mr.Yangxiufeng on 2017/6/23.
+ * Created by  on 2017/6/23.
  * Time:9:16
  * ProjectName:Common-admin
  */

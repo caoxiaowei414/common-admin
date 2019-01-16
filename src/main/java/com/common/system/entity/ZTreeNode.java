@@ -5,7 +5,7 @@ import lombok.Data;
 import java.io.Serializable;
 
 /**
- * Created by Mr.Yangxiufeng on 2017/8/2.
+ * Created by  on 2017/8/2.
  * Time:17:52
  * ProjectName:Common-admin
  */

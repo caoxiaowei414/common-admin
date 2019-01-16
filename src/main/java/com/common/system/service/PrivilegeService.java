@@ -5,7 +5,7 @@ import com.common.system.entity.RcPrivilege;
 import java.util.List;
 
 /**
- * Created by Mr.Yangxiufeng on 2017/8/7.
+ * Created by  on 2017/8/7.
  * Time:11:49
  * ProjectName:Common-admin
  */

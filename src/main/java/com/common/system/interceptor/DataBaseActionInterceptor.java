@@ -21,7 +21,7 @@ import java.util.Properties;
 /**
  * <p>数据库操作拦截器</p>
  * <p>method = "update"表示拦截增删改<p/>
- * Created by Mr.Yangxiufeng on 2017/9/14.
+ * Created by  on 2017/9/14.
  * Time:15:47
  * ProjectName:Common-admin
  */

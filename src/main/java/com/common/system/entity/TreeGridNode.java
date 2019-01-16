@@ -7,7 +7,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * Created by Mr.Yangxiufeng on 2017/9/12.
+ * Created by  on 2017/9/12.
  * Time:15:46
  * ProjectName:Common-admin
  */

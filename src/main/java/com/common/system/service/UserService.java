@@ -5,7 +5,7 @@ import com.common.system.util.Result;
 import com.github.pagehelper.PageInfo;
 
 /**
- * Created by Mr.Yangxiufeng on 2017/6/26.
+ * Created by  on 2017/6/26.
  * Time:13:57
  * ProjectName:Common-admin
  */

@@ -12,7 +12,7 @@ import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
- * Created by Mr.Yangxiufeng on 2017/6/26.
+ * Created by  on 2017/6/26.
  * Time:18:05
  * ProjectName:Common-admin
  */
@@ -31,10 +31,10 @@ public class Swagger2Config {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("大数据可视化平台--man端")
-                .description("大数据可视化平台Man端接口说明文档")
+                .title("物联网管理平台接口说明文档")
+                .description("物联网管理平台接口说明文档")
                 .termsOfServiceUrl("")
-                .contact(new Contact("杨秀峰","yangxiufeng@gogbuy.com","yangxiufeng@gogbuy.com"))
+                .contact(new Contact("曹晓维","","337619617@qq.com"))
                 .version("1.0")
                 .build();
     }

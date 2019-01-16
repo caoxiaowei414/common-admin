@@ -1,7 +1,7 @@
 package com.common.system;
 
 /**
- * Created by Mr.Yangxiufeng on 2017/9/12.
+ * Created by  on 2017/9/12.
  * Time:21:26
  * ProjectName:Common-admin
  */

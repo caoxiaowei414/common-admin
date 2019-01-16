@@ -3,7 +3,7 @@ package com.common.system.util;
 import java.util.regex.Pattern;
 
 /**
- * Created by Mr.Yangxiufeng on 2017/8/30.
+ * Created by  on 2017/8/30.
  * Time:15:35
  * ProjectName:Common-admin
  */
